@@ -1,18 +1,12 @@
 # openui5-speech-recogniser
 
-  
-
-This repository contains the example and the source code developed using UI5 tooling for the api which can be encorportaed to UI5 application to enable voice recognition.
-
-  
+This repository contains the source code developed using UI5 tooling for the api which can be encorportaed to UI5 application to enable voice recognition.
 
 # Requirements
 
 -  [NodeJS](https://nodejs.org/en/download/), version 8.0 or higher
 
 -  [UI5 Command Line Interface](https://github.com/SAP/ui5-cli)
-
-  
 
 # ⚡️ Installation
 
@@ -27,28 +21,13 @@ This repository contains the example and the source code developed using UI5 too
 		    "openui5-speech-recogniser"
 		    ]
     }
-
-
-# Run
-
-  
-
-    
+# Run    
     $ ui5 serve
-
-  
-
 # What is openui5-speech-recogniser?
-
-  
 
 **openui5-speech-recogniser** is a library which can be included into a project to enable voice recognition ability in the application. This API uses the Google Chrome’s voice recognition engine named ‘**_webkitSpeechRecognition’_**. This file can be placed anywhere in the webapp folder of the application. (recommended to be placed in util folder).
 
-  
-
 # Usage
-
-  
 
 ## ⚡️ Initialization
 In the component.js of the application import the speech recognizer API like below
@@ -59,8 +38,6 @@ In the component.js of the application import the speech recognizer API like bel
  on the init method initialize the SpeechRecognizer using below code.
 
     this.oSpeechRecognizer = new SpeechRecognizer(this,<true/false>);
-
-  
 
 In the above code, the first parameter to the API is the instance of the component and second is a boolean flag which enables application to listen to command “**_HELLO ASSISTANT_**” to start listening to user commands.
 
@@ -77,8 +54,6 @@ User can add a mic button in the UI, which while pressed will listen to commands
 ## Register Commands
 
 ### Command Without parameter
-
-  
 
 It is possible to register a command which performs an action without taking any inputs from user. This can be performed by code below.
 
@@ -98,9 +73,8 @@ It is possible to register command which takes input from the user as voice and 
     
     }.bind(this));
 In the above code, the texts spoken after the command is taken as parameter for the call back function.
-
+# Demo
+Click here to see [demo](https://github.com/sijas/ui5-voice-recognition-example)
 # References
-
-  
 
 -  [Webkit Speech Recognition API](https://developers.google.com/web/updates/2013/01/Voice-Driven-Web-Apps-Introduction-to-the-Web-Speech-API)
