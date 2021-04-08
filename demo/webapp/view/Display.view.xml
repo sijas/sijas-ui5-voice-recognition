@@ -1,0 +1,47 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	controllerName="in.sijas.app.ui5.voicerecognition.VoiceRecognition.controller.Display" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="{parts:['i18n>detailTitle','FirstName','LastName'],formatter:'jQuery.sap.formatMessage'}">
+		<content>
+			<f:Form id="FormDisplay354" editable="false">
+				<f:title>
+					<core:Title text="Address"/>
+				</f:title>
+				<f:layout>
+					<f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4"
+						emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+				</f:layout>
+				<f:formContainers>
+					<f:FormContainer>
+						<f:formElements>
+							<f:FormElement label="Name">
+								<f:fields>
+									<Text text="{FirstName} {LastName}"/>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="Address">
+								<f:fields>
+									<Text text=" {Address}"/>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="ZIP Code/City">
+								<f:fields>
+									<Text text="{PostalCode} {City}"/>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="Region">
+								<f:fields>
+									<Text text="{Region}"/>
+								</f:fields>
+							</f:FormElement>
+						</f:formElements>
+					</f:FormContainer>
+				</f:formContainers>
+			</f:Form>
+		</content>
+		<footer>
+			<Toolbar>
+				<Button text="Edit" press="editCurrentItem"></Button>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

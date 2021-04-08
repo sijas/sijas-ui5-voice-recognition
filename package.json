@@ -1,6 +1,6 @@
 {
   "name": "openui5-speech-recogniser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A UI5 library which can be used to recognise speech and perform tasks",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
