@@ -1,0 +1,15 @@
+specVersion: '2.3'
+metadata:
+  name: openui5-speech-recogniser
+  copyright: |-
+    openui5-speech-recogniser
+     * (c) Copyright 2020-${currentYear} Mohammed Sijas
+     * Licensed under the MIT license. See LICENSE file in the project root for full license information.
+type: library
+framework:
+  name: OpenUI5
+  version: "1.88.0"
+  libraries:
+    - name: sap.m
+    - name: sap.ui.core
+      development: true
