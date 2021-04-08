@@ -3,8 +3,15 @@
   "version": "1.0.3",
   "description": "A UI5 library which can be used to recognise speech and perform tasks",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "npm run build && git add -A dist"
   },
+  "main": "dist/resources/in/sijas/ui5/lib/speech-recognizer/library-preload.js",
+  "files": [
+    "dist",
+    "src",
+    "ui5.yaml"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sijas/ui5-voice-recognition.git"
