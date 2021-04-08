@@ -15,7 +15,7 @@ sap.ui.define([
    * @namespace
    * @name openui5.model.json.crud
    * @author Mauricio Lauffer
-   * @version 1.0.2
+   * @version 1.0.3
    * @public
    */
   return sap.ui.getCore().initLibrary({
@@ -28,6 +28,6 @@ sap.ui.define([
       'in.sijas.ui5.lib.speech-recognizer.SpeechRecognizer'
     ],
     noLibraryCSS: true,
-    version: '1.0.2'
+    version: '1.0.3'
   });
 });

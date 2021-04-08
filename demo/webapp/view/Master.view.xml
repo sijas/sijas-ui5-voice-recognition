@@ -1,0 +1,26 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="in.sijas.app.ui5.voicerecognition.VoiceRecognition.controller.Master" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="{i18n>MasterTitle}">
+		<subHeader>
+			<Bar id="headerBar">
+				<contentMiddle>
+					<SearchField id="searchField" showRefreshButton="{= !${device>/support/touch} }" tooltip="{i18n>masterSearchTooltip}" width="100%" search="onSearch"></SearchField>
+				</contentMiddle>
+			</Bar>
+		</subHeader>
+		<content>
+			<List mode="SingleSelectMaster" items="{/Employees}" id="list" selectionChange="onSelectionChange">
+				<items>
+					<StandardListItem title="{FirstName} {LastName}" description="{Address}"/>
+				</items>
+			</List>
+		</content>
+		<footer>
+			<Bar>
+				<contentRight>
+					<Button icon="sap-icon://microphone" id="mic"/>
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Voice Recognition</title>
+		<script id="sap-ui-bootstrap"
+			src="resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+            data-sap-ui-xx-bindingSyntax="complex"
+			data-sap-ui-theme="sap_fiori_3"
+			data-sap-ui-resourceroots='{"in.sijas.app.ui5.voicerecognition.VoiceRecognition": "./"}'
+			data-sap-ui-async="true"
+			data-sap-ui-frameOptions="trusted">
+		</script>
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "in.sijas.app.ui5.voicerecognition.VoiceRecognition"
+					})
+				}).placeAt("content");
+			});
+		</script>
+	</head>
+	<body class="sapUiBody" id="content">
+	</body>
+</html>
